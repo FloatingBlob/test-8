@@ -1,0 +1,36 @@
+.other {
+  display: grid;
+  width: 80%;
+  height: 80%;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+.other .left {
+  display: flex;
+  font-size: var(--content);
+  color: var(--text);
+}
+
+.other .left a {
+  color: var(--primary);
+}
+
+.other .right {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .other {
+    width: 95%;
+    height: 90%;
+    grid-template-columns: 1fr;
+    transform: translateY(40px);
+  }
+
+  .other .left {
+    text-align: center;
+    justify-content: center;
+  }
+}

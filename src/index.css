@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("../public/assets/fonts/PhantomSans.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Phantom Sans", sans-serif;
+  --title: clamp(2rem, 2vw + 1.5rem, 4.5rem);
+  --content: clamp(1rem, 1.5vw + 0.75rem, 3rem);
+  --description: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+  line-height: 100%;
+  transition: all 0.5s ease;
+  user-select: none;
+}
+
+:root {
+  --background: #17171d;
+  --text: #ffffff;
+  --primary: #ec3750;
+  --secondary: #8492a6;
+  --accent: #5bc0de;
+}
+
+[theme="light"] {
+  --background: #ffffff;
+  --text: #1f2d3d;
+  --primary: #ec3750;
+  --secondary: #3c4858;
+  --accent: #338eda;
+}

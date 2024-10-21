@@ -1,0 +1,47 @@
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+nav li:last-child {
+  padding: 0 clamp(5px, 1.5vw, 25px) 0 0;
+}
+
+svg {
+  cursor: pointer;
+  color: var(--primary);
+
+  width: 2vw;
+  max-width: 40px;
+  min-width: 25px;
+  height: auto;
+}
+
+.icon {
+  width: 10vw;
+  max-width: 200px;
+  min-width: 100px;
+  height: auto;
+}
+
+nav button {
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  place-items: center;
+}

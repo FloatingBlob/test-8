@@ -1,0 +1,38 @@
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.counter {
+  display: flex;
+  position: fixed;
+  right: 5vw;
+  bottom: 3vw;
+  height: 150px;
+  font-size: 150px;
+  clip-path: polygon(0 0, 100% 0, 100% 125px, 0 125px);
+}
+
+.counter-1,
+.counter-2,
+.counter-3 {
+  position: relative;
+  top: -15px;
+  transition: none;
+}
+
+.num1offset1 {
+  position: relative;
+  right: -53px;
+}
+
+.num1offset2,
+.num1offset3 {
+  position: relative;
+  right: -18px;
+}
+
+.hidden {
+  display: none;
+}
