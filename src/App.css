@@ -26,8 +26,7 @@
   width: clamp(25px, 1.5vw, 50px);
   height: clamp(25px, 1.5vw, 50px);
   border-radius: clamp(25px, 1.5vw, 50px);
-  background: var(--accent);
-  opacity: 0.9;
+  background: var(--text);
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {

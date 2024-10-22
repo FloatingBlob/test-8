@@ -8,154 +8,21 @@
     <meta name="description" content="definately not a virus (trust)" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Lazine</title>
+    <title>Counterspell</title>
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://test-7-pi.vercel.app/" />
+    <meta property="og:url" content="https://test-8-pi.vercel.app/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Lazine" />
+    <meta property="og:title" content="Counterspell" />
     <meta property="og:description" content="definately not a virus (trust)" />
     <meta property="og:image" content="https://raw.githubusercontent.com/FloatingBlob/test-4/main/calf.jpg" />
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Lazine" />
+    <meta name="twitter:title" content="Counterspell" />
     <meta name="twitter:description" content="definately not a virus (trust)" />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/FloatingBlob/test-4/main/calf.jpg" />
-
-    <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <!-- GSAP CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <style>
-      * {
-        line-height: 100%;
-      }
-
-      body,
-      html {
-        font-family: "Montserrat", sans-serif;
-        background-color: #e6e6e6;
-        color: #191919;
-      }
-    </style>
   </head>
   <body>
+    <div id="root"></div>
     <noscript>no javascript boo womp</noscript>
-    <div class="preloader">
-      <div class="counter">
-        <div class="counter-1 digit">
-          <div class="num">0</div>
-          <div class="num num1offset1">1</div>
-        </div>
-        <div class="counter-2 digit">
-          <div class="num">0</div>
-          <div class="num num1offset2">1</div>
-          <div class="num">2</div>
-          <div class="num">3</div>
-          <div class="num">4</div>
-          <div class="num">5</div>
-          <div class="num">6</div>
-          <div class="num">8</div>
-          <div class="num">9</div>
-          <div class="num">0</div>
-        </div>
-        <div class="counter-3 digit">
-          <div class="num">0</div>
-          <div class="num num1offset3">1</div>
-          <div class="num">2</div>
-          <div class="num">3</div>
-          <div class="num">4</div>
-          <div class="num">5</div>
-          <div class="num">6</div>
-          <div class="num">7</div>
-          <div class="num">8</div>
-          <div class="num">9</div>
-        </div>
-      </div>
-    </div>
-    <div id="root" class="hidden"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        for (let i = 0; i < 2; i++) {
-          for (let j = 0; j < 10; j++) {
-            const div = document.createElement("div");
-            div.className = "num";
-            div.textContent = j;
-            document.querySelector(".counter-3").appendChild(div);
-          }
-        }
-
-        const finalDiv = document.createElement("div");
-        finalDiv.className = "num";
-        finalDiv.textContent = "0";
-        document.querySelector(".counter-3").appendChild(finalDiv);
-
-        function animate(counter, duration, delay = 0) {
-          const numHeight = counter.querySelector(".num").clientHeight;
-          const totalDistance = (counter.querySelectorAll(".num").length - 1) * numHeight;
-          gsap.to(counter, {
-            y: -totalDistance,
-            delay: delay,
-            duration: duration,
-            ease: "power2.inOut",
-          });
-        }
-
-        animate(document.querySelector(".counter-1"), 2, 2.5);
-        animate(document.querySelector(".counter-2"), 4.5);
-        animate(document.querySelector(".counter-3"), 4);
-
-        gsap.to(".digit", {
-          top: "-150px",
-          stagger: { amount: 0.5 },
-          delay: 4.5,
-          duration: 1.5,
-          ease: "expo.inOut",
-
-          onComplete: function () {
-            document.querySelector(".preloader").classList.add("hidden");
-            document.querySelector("#root").classList.remove("hidden");
-          },
-        });
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = [
-          "/assets/icon.png",
-          "/assets/zena.png",
-          "/assets/nier.png",
-          "/assets/ihwa.png",
-          "/assets/bocchizilla.png",
-          "/assets/steam.png",
-          "/assets/lunartear.png",
-          "/assets/wordle.png",
-          "/assets/idiot.png",
-          "/assets/turnip.png",
-          "/assets/thumbsup.png",
-          "/assets/donttouchme.png",
-        ];
-
-        let loadedImages = 0;
-
-        function preloadImages(index) {
-          if (index >= images.length) {
-            if (loadedImages === images.length) {
-              console.log("All images have been preloaded.");
-            }
-            return;
-          }
-          const img = new Image();
-          img.src = images[index];
-          img.onload = () => {
-            loadedImages++;
-            preloadImages(index + 1);
-          };
-          img.onerror = () => {
-            preloadImages(index + 1);
-          };
-        }
-        preloadImages(0);
-      });
-    </script>
   </body>
 </html>

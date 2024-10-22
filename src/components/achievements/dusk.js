@@ -3,9 +3,9 @@ import "./dusk.css";
 import { useFlipCard } from "../../hooks/flip.js";
 
 export default function Achievements() {
-    const steam = "/assets/steam.png";
-    const lunartear = "/assets/lunartear.png";
-    const wordle = "/assets/wordle.png";
+    const coder = "/assets/coder.png";
+    const artist = "/assets/artist.png";
+    const musician = "/assets/musician.png";
     useFlipCard();
 
     return(
@@ -14,20 +14,20 @@ export default function Achievements() {
                 <div className="layout">
                     <div className="box">
                         <div className="card">
-                            <div className="front"><img src={steam} alt="steam" /></div>
-                            <div className="back"><p>117.3 hours over past 2 weeks, Terraria got to me</p></div>
+                            <div className="front"><img src={coder} alt="steam" /></div>
+                            <div className="back"><p>I am the one who codes</p></div>
                         </div>
                     </div>
                     <div className="box">
                         <div className="card">
-                            <div className="front"><img src={lunartear} alt="white moonflower" /></div>
-                            <div className="back"><p>After many hours of breeding, behold the "Lunar Tear"</p></div>
+                            <div className="front"><img src={artist} alt="white moonflower" /></div>
+                            <div className="back"><p>I am the one who paints</p></div>
                         </div>
                     </div>
                     <div className="box">
                         <div className="card">
-                            <div className="front"><img src={wordle} alt="wordle" /></div>
-                            <div className="back"><p>I love wordle</p></div>
+                            <div className="front"><img src={musician} alt="wordle" /></div>
+                            <div className="back"><p>I am the one who jams</p></div>
                         </div>
                     </div>
                 </div>

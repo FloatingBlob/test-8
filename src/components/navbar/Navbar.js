@@ -8,7 +8,7 @@ export default function NavBar ({ setDarkMode, darkMode }) {
         <nav>
             <ul>
                 <li>
-                    <a href="#dawn"><img src={icon} className="icon" alt="Floor of philosophy icon" /></a>
+                    <a href="https://hackclub.com/"><img src={icon} className="icon" alt="hack club" /></a>
                 </li>
                 <li>
                     <Toggle setDarkMode={setDarkMode} darkMode={darkMode} />

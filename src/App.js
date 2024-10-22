@@ -9,15 +9,12 @@ import Home from "./components/home/dawn.js"
 import About from "./components/about/noon.js";
 import Achievements from "./components/achievements/dusk.js";
 import Other from "./components/other/midnight.js";
-import { ThemeProvider } from 'theme-ui'
-import theme from '@hackclub/theme'
 
 function App() {
     const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const [darkMode, setdarkMode] = useLocalStorage("darkMode", preference);
 
     return (
-        <ThemeProvider theme={theme}>
         <div theme={darkMode ? "dark" : "light"}>
             <NavBar setDarkMode={setdarkMode} darkMode={darkMode} />
             
@@ -35,7 +32,6 @@ function App() {
                 <SwiperSlide data-hash="midnight"><Other /></SwiperSlide>
             </Swiper>
         </div>
-        </ThemeProvider>
     );
 }
 

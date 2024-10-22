@@ -2,7 +2,7 @@
   display: grid;
   width: 80%;
   height: 80%;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 35% 15% 50%;
   align-items: center;
 }
 
@@ -12,8 +12,11 @@
   color: var(--text);
 }
 
-.other .left a {
-  color: var(--primary);
+.other .middle {
+  display: flex;
+  font-size: var(--content);
+  color: var(--text);
+  text-align: right;
 }
 
 .other .right {

@@ -1,25 +1,20 @@
 import React from "react";
 import "./dawn.css";
-import { useIndentToggle } from "../../hooks/indent.js";
 
 export default function Home() {
-    const zena = "/assets/zena.png";
-
-    useIndentToggle();
+    const title = "/assets/title.png";
 
     return (
         <div className="home">
-            <div className="left">
-                <div className="content">
-                    <p>Greetings, dear <span className="highlight">guests</span>.</p>
-                    <br />
-                    <p className="indent-text">I'm <span className="highlight">Lazine</span><span className="hidden">ss</span></p>
-                    <br />
-                    <p>also known as . . .</p>
-                </div>
+            <div className="top">
+                <img src={title} className="home-img" alt="counterspell"/>
             </div>
-            <div className="right">
-                <img src={zena} className="home-img" alt="zena and claw"/>
+
+            <div className="bottom">
+                <div className="content">
+                    <p>QE's <span className="highlight">first</span> ever <span className="highlight">game jam</span></p>
+                    <p>November <span className="highlight">23</span>, 2024</p>
+                </div>
             </div>
         </div> 
     );

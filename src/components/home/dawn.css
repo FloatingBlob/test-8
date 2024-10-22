@@ -2,55 +2,34 @@
   display: grid;
   width: 80%;
   height: 80%;
-  grid-template-columns: 60% 40%;
+  grid-template-rows: 70% 30%;
   align-items: center;
 }
 
-.home .left {
-  display: flex;
-  font-size: var(--title);
-  color: var(--text);
-}
-
-.hidden {
-  display: none;
-}
-
-.indent-text:hover .hidden,
-.indent-text.tap .hidden {
-  display: inline-block;
-}
-
-.home .right {
+.home .top {
   display: flex;
   justify-content: center;
 }
 
+.home .bottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--title);
+  color: var(--text);
+  line-height: var(--line-height-title);
+}
+
 .home-img {
-  max-width: 500px;
-  min-width: 200px;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 300px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
   .home {
     width: 95%;
     height: 90%;
-    grid-template-columns: 1fr;
-    line-height: 50%;
-    transform: translateY(40px);
-  }
-
-  .home .left {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .indent-text {
-    padding-left: 0;
-  }
-
-  .home-img {
-    width: 45%;
-    min-width: 250px;
   }
 }
