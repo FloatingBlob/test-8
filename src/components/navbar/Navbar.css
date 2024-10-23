@@ -12,6 +12,14 @@ nav ul {
   align-items: center;
 }
 
+nav a {
+  display: flex;
+}
+
+nav li {
+  padding: 0 clamp(10px, 1vw, 40px) 0 0;
+}
+
 nav li:first-child {
   margin-right: auto;
 }
