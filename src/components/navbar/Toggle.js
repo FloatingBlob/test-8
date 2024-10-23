@@ -1,10 +1,10 @@
 import React from "react";
-import { RxSun, RxMoon } from "react-icons/rx";
+import { CiLight, CiDark } from "react-icons/ci";
 
 export default function Toggle({ setDarkMode, darkMode }) {
     return (
         <button onClick={() => setDarkMode(!darkMode)}>
-            {darkMode ? <RxSun /> : <RxMoon />}
+            {darkMode ? <CiLight /> : <CiDark />}
         </button>
     );
 }

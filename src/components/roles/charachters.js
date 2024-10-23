@@ -24,7 +24,7 @@ export default function Roles() {
                             <div className="back">
                                 <div>
                                     <img src={coder} alt="coder" />
-                                    <p>I am the one who codes</p>
+                                    <p>I am the one who codes.</p>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ export default function Roles() {
                             <div className="back">
                                 <div>
                                     <img src={artist} alt="artist" />
-                                    <p>I am the one who paints</p>
+                                    <p>I am the one who paints.</p>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ export default function Roles() {
                             <div className="back">
                                 <div>
                                     <img src={musician} alt="musician" />
-                                    <p>I am the one who jams</p>
+                                    <p>I am the one who jams.</p>
                                 </div>
                             </div>
                         </div>

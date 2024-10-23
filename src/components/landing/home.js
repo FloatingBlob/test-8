@@ -7,7 +7,7 @@ export default function Landing() {
     return (
         <div className="home">
             <div className="top">
-                <img src={title} className="home-img" alt="counterspell"/>
+                <img src={title} className="home-img" alt="title"/>
             </div>
 
             <div className="bottom">
