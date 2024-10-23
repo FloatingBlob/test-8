@@ -1,7 +1,7 @@
 import React from "react";
-import "./noon.css";
+import "./description.css";
 
-export default function About() {
+export default function Description() {
     const jolly1 = "/assets/jolly1.png";
 
     return(
@@ -9,7 +9,7 @@ export default function About() {
             <div className="left">
                 <div>
                     <p className="title"><b>What is <span className="highlight">Counterspell</span>?</b></p>
-                    <p>Welcome to <span className="highlight">Counterspell</span>, QE’s first ever Game Jam! Interested in coding and making? Well this is the perfect opportunity for you!</p>
+                    <p>Welcome to <span className="highlight">Counterspell</span>, QE’s first ever hackathon! Interested in coding and making? Well this is the perfect opportunity for you!</p>
                     <br />
                     <p><span className="highlight">Counterspell QE</span> is a 12 hour competition where you compete in teams to make the best game you can. And you don’t need to be a programmer, 
                     <span className="highlight"> we welcome artists and musicians as well</span>, after all we encourage as much of the game design as possible to be completely original!</p>

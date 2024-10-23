@@ -1,8 +1,8 @@
 import React from "react";
-import "./dusk.css";
+import "./charachters.css";
 import { useFlipCard } from "../../hooks/flip.js";
 
-export default function Achievements() {
+export default function Roles() {
     const coder = "/assets/coder.png";
     const artist = "/assets/artist.png";
     const musician = "/assets/musician.png";

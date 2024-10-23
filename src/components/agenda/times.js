@@ -1,7 +1,7 @@
 import React from "react";
-import "./midnight.css";
+import "./times.css";
 
-export default function Other() {
+export default function Agenda() {
     const donttouchme = "/assets/donttouchme.png";
 
     return (
@@ -41,9 +41,6 @@ export default function Other() {
                     <p>6:00 PM</p>
                     <p>6:00 PM</p>
                 </div>
-            </div>
-            <div className="right">
-                <p className="title"><b><span className="highlight">FAQ</span></b></p>
             </div>
         </div>
     );

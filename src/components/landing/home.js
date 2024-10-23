@@ -1,7 +1,7 @@
 import React from "react";
-import "./dawn.css";
+import "./home.css";
 
-export default function Home() {
+export default function Landing() {
     const title = "/assets/title.png";
 
     return (
@@ -12,8 +12,8 @@ export default function Home() {
 
             <div className="bottom">
                 <div className="content">
-                    <p>QE's <span className="highlight">first</span> ever <span className="highlight">game jam</span></p>
-                    <p>November <span className="highlight">23</span>, 2024</p>
+                    <p>QE's <span className="highlight">first ever</span> hackathon</p>
+                    <p>November 23, 2024</p>
                 </div>
             </div>
         </div> 
