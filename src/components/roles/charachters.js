@@ -6,6 +6,7 @@ export default function Roles() {
     const coder = "/assets/coder.png";
     const artist = "/assets/artist.png";
     const musician = "/assets/musician.png";
+    const back = "/assets/back.png";
     useFlipCard();
 
     return(
@@ -14,20 +15,50 @@ export default function Roles() {
                 <div className="layout">
                     <div className="box">
                         <div className="card">
-                            <div className="front"><img src={coder} alt="steam" /></div>
-                            <div className="back"><p>I am the one who codes</p></div>
+                            <div className="front">
+                                <div>
+                                    <img src={back} alt="back" />
+                                    <p className="flip">Flip me!</p>
+                                </div>
+                            </div>
+                            <div className="back">
+                                <div>
+                                    <img src={coder} alt="coder" />
+                                    <p>I am the one who codes</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="box">
                         <div className="card">
-                            <div className="front"><img src={artist} alt="white moonflower" /></div>
-                            <div className="back"><p>I am the one who paints</p></div>
+                            <div className="front">
+                                <div>
+                                    <img src={back} alt="back" />
+                                    <p>Flip me!</p>
+                                </div>
+                            </div>
+                            <div className="back">
+                                <div>
+                                    <img src={artist} alt="artist" />
+                                    <p>I am the one who paints</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="box">
                         <div className="card">
-                            <div className="front"><img src={musician} alt="wordle" /></div>
-                            <div className="back"><p>I am the one who jams</p></div>
+                        <div className="front">
+                                <div>
+                                    <img src={back} alt="back" />
+                                    <p>Flip me!</p>
+                                </div>
+                            </div>
+                            <div className="back">
+                                <div>
+                                    <img src={musician} alt="musician" />
+                                    <p>I am the one who jams</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

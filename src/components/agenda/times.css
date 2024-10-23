@@ -2,7 +2,7 @@
     display: grid;
     width: 80%;
     height: 80%;
-    grid-template-columns: 35% 15% 50%;
+    grid-template-columns: 10% 40% 40% 10%;
     align-items: center;
   }
   
@@ -10,20 +10,17 @@
     display: flex;
     font-size: var(--content);
     color: var(--text);
-  }
-  
-  .other .middle {
-    display: flex;
-    font-size: var(--content);
-    color: var(--text);
-    text-align: right;
+    justify-content: center;
   }
   
   .other .right {
     display: flex;
+    font-size: var(--content);
+    color: var(--text);
+    text-align: right;
     justify-content: center;
   }
-  
+
   @media (max-width: 768px) {
     .other {
       width: 95%;
