@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.layout {
+.charachters .layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5em;
