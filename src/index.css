@@ -28,6 +28,7 @@
   --title: clamp(2rem, 2vw + 1.5rem, 4.5rem);
   --content: clamp(1rem, 1.5vw + 0.75rem, 3rem);
   --description: clamp(1rem, 1vw + 0.5rem, 2rem);
+  --box: clamp(0.2rem, 0.5vw + 0.6rem, 1.5rem);
   --line-height-title: 1;
   --line-height-content: 1.125;
   --line-height-description: 1.5;

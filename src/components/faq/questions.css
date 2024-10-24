@@ -31,11 +31,11 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  
 }
 
 .text {
-  display: flex;
-  font-size: clamp(0.5rem, 1vw + 0.1em, 1.5rem);
+  font-size: var(--box);
   line-height: var(--line-height-description);
   color: var(--text);
 }
@@ -47,30 +47,48 @@
 
 @media (max-width: 1024px) {
   .faq {
-    transform: translateY(4%);
+    transform: translateY(2%);
     width: 90%;
     height: 85%;
   }
 
-  .layout {
-    height: 97%;
+  .faq .background {
+    height: 87%;
+  }
+
+  .faq .layout {
+    height: 98%;
   }
 }
 
 @media (max-width: 768px) {
-  .achievements {
-    width: 85%;
-    transform: translateY(40px) translateX(-2.5%);
-  }
-
-  .layout {
+  .faq .layout {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 100%);
     grid-auto-flow: column;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     height: 97.5%;
   }
 
+  .faq .background {
+    border-radius: 5px;
+  }
+
+  .faq .layout {
+    height: 99%;
+  }
+
   .note {
     scroll-snap-align: start;
+  }
+
+  .text {
+    line-height: var(--line-height-content);
+  }
+
+  .text .heading {
+    font-size: var(--title);
+    line-height: var(--line-height-title);
   }
 }

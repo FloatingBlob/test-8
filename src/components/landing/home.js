@@ -12,7 +12,7 @@ export default function Landing() {
 
             <div className="bottom">
                 <div className="content">
-                    <p>QE's <span className="highlight">first ever</span> hackathon</p>
+                    <p><b>QE's <span className="highlight">first ever</span> hackathon</b></p>
                     <p>November 23, 2024</p>
                 </div>
             </div>

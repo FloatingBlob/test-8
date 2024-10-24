@@ -1,37 +1,40 @@
 .other {
-    display: grid;
-    width: 80%;
-    height: 80%;
-    grid-template-columns: 10% 40% 40% 10%;
-    align-items: center;
-  }
-  
-  .other .left {
-    display: flex;
-    font-size: var(--content);
-    color: var(--text);
-    justify-content: center;
-  }
-  
-  .other .right {
-    display: flex;
-    font-size: var(--content);
-    color: var(--text);
-    text-align: right;
-    justify-content: center;
+  display: grid;
+  width: 80%;
+  height: 80%;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.other .left {
+  display: flex;
+  font-size: var(--content);
+  color: var(--text);
+  justify-content: center;
+  right: 10%;
+  transform: translateX(10%);
+}
+
+.other .right {
+  display: flex;
+  font-size: var(--content);
+  color: var(--text);
+  text-align: right;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .other {
+    width: 95%;
+    height: 90%;
+    grid-template-columns: 60% 30%;
   }
 
-  @media (max-width: 768px) {
-    .other {
-      width: 95%;
-      height: 90%;
-      grid-template-columns: 1fr;
-      transform: translateY(40px);
-    }
-  
-    .other .left {
-      text-align: center;
-      justify-content: center;
-    }
+  .other .left {
+    justify-content: left;
+    transform: translateX(5%);
   }
-  
+  .other .right {
+    justify-content: right;
+  }
+}

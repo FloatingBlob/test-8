@@ -26,15 +26,15 @@
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: clamp(25px, 1vw, 40px);
-  height: clamp(25px, 1vw, 40px);
+  width: clamp(10px, 1vw, 20px);
+  height: clamp(10px, 1vw, 20px);
   border-radius: clamp(25px, 1.5vw, 50px);
   background: var(--text);
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  width: clamp(25px, 2vw, 40px);
-  height: clamp(25px, 2vw, 40px);
+  width: clamp(15px, 1.5vw, 30px);
+  height: clamp(15px, 1.5vw, 30px);
   background: var(--primary);
 }
 

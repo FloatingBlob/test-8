@@ -1,12 +1,12 @@
-.achievements {
+.charachters {
   display: grid;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   grid-template-columns: 97% 3%;
   align-items: center;
 }
 
-.achievements .background {
+.charachters .background {
   display: flex;
   height: 100%;
   background-color: var(--secondary);
@@ -17,7 +17,6 @@
 
 .layout {
   display: grid;
-  grid-template-rows: repeat(1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5em;
   height: 95%;
@@ -27,6 +26,7 @@
 .box {
   background-color: var(--primary);
   perspective: 500px;
+  border-radius: 20px;
 }
 
 .card.is-flipped {
@@ -36,8 +36,8 @@
 .card {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100%;
-  border-radius: 15px;
   transition: transform 1000ms;
   transform-style: preserve-3d;
   position: relative;
@@ -47,12 +47,13 @@
 .front,
 .back {
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 .card .back {
@@ -65,56 +66,50 @@
 
 .front img {
   backface-visibility: hidden;
+  width: 80%;
+  height: auto;
+}
+
+.back img {
+  backface-visibility: hidden;
+  width: 80%;
+  height: auto;
 }
 
 .back {
-  text-align: center;
   color: var(--text);
   font-size: var(--description);
   transform: rotateY(180deg) rotateZ(180deg);
 }
 
 @media (max-width: 1024px) {
-  .achievements {
-    grid-template-columns: 1fr;
-    transform: translateY(4%);
+  .charachters {
+    transform: translateY(2%);
     width: 90%;
-    height: 85%;
+    height: 60%;
   }
 
-  .layout {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    height: 97%;
+  .charachters .background {
+    height: 87%;
   }
 
-  .front img {
-    width: 80%;
+  .charachters .layout {
+    height: 98%;
   }
 }
 
 @media (max-width: 768px) {
-  .achievements {
-    width: 85%;
-    transform: translateY(40px) translateX(-2.5%);
+  .charachters {
+    transform: translateY(2%);
+    height: 100%;
   }
 
-  .layout {
-    grid-template-rows: repeat(2, 1fr);
+  .charachters .layout {
     grid-template-columns: repeat(3, 100%);
     grid-auto-flow: column;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     height: 97.5%;
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge, and Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
   }
 
   .card {
@@ -122,12 +117,20 @@
   }
 
   .front img {
-    width: 75%;
+    width: 50%;
+  }
+
+  .back img {
+    width: 50%;
   }
 }
 
 @media (max-width: 480px) {
   .front img {
-    width: 95%;
+    width: 80%;
+  }
+
+  .back img {
+    width: 80%;
   }
 }

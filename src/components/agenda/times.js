@@ -4,7 +4,6 @@ import "./times.css";
 export default function Agenda() {
     return (
         <div className="other">
-            <div></div>
             <div className="left">
                 <div>
                     <p className="title"><b><span className="highlight">Agenda</span></b></p>
@@ -37,7 +36,6 @@ export default function Agenda() {
                     <p>20:00 PM</p>
                 </div>
             </div>
-            <div></div>
         </div>
     );
 }

@@ -14,8 +14,9 @@
 }
 
 .about-img {
+  width: 50vw;
   max-width: 500px;
-  min-width: 225px;
+  min-width: 300px;
 }
 
 .about .right {
