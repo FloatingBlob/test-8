@@ -8,7 +8,7 @@ export default function Agenda() {
                 <div>
                     <p className="title"><b><span className="highlight">Agenda</span></b></p>
                     <p>Doors Open</p>
-                    <p>Theme Announcment</p>
+                    <p>Theme Announcement</p>
                     <p>Hackathon Begins</p>
                     <p>Lunch (see FAQ)</p>
                     <p>Judging Begins</p>
