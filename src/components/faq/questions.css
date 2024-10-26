@@ -2,38 +2,35 @@
   display: grid;
   width: 80%;
   height: 80%;
-  grid-template-columns: 97% 3%;
-  align-items: center;
+  transform: translateX(-2%);
 }
 
 .faq .background {
   display: flex;
-  height: 100%;
-  background-color: var(--secondary);
-  border-radius: 20px;
+  border-radius: var(--border);
+  padding: var(--padding);
   justify-content: center;
   align-items: center;
+  background-color: var(--secondary);
 }
 
 .faq .layout {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5em;
-  height: 97%;
-  width: 98.5%;
+  gap: var(--padding);
+  height: 100%;
 }
 
 .note {
   display: flex;
-  background-color: var(--background);
-  border-radius: 20px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  border-radius: var(--border);
+  padding: var(--padding);
+  justify-content: center;
+  text-align: center;
   min-width: 0;
-  min-height: 0;
+  background-color: var(--background);
 }
 
 .text {
@@ -53,32 +50,19 @@
     width: 90%;
     height: 85%;
   }
-
-  .faq .background {
-    height: 87%;
-  }
-
-  .faq .layout {
-    height: 98%;
-  }
 }
 
 @media (max-width: 768px) {
+  .faq {
+    transform: translateY(2%) translateX(-1%);
+  }
+
   .faq .layout {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 100%);
     grid-auto-flow: column;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    height: 97.5%;
-  }
-
-  .faq .background {
-    border-radius: 5px;
-  }
-
-  .faq .layout {
-    height: 99%;
   }
 
   .note {

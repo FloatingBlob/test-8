@@ -2,31 +2,29 @@
   display: grid;
   width: 60%;
   height: 60%;
-  grid-template-columns: 97% 3%;
-  align-items: center;
 }
 
 .charachters .background {
   display: flex;
-  height: 100%;
-  background-color: var(--secondary);
-  border-radius: 20px;
+  border-radius: var(--border);
+  padding: var(--padding);
   justify-content: center;
   align-items: center;
+  background-color: var(--secondary);
 }
 
 .charachters .layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5em;
-  height: 95%;
-  width: 97%;
+  gap: var(--padding);
+  width: 100%;
+  height: 100%;
 }
 
 .box {
-  background-color: var(--primary);
   perspective: 500px;
-  border-radius: 20px;
+  border-radius: var(--border);
+  background-color: var(--primary);
 }
 
 .card.is-flipped {
@@ -40,20 +38,18 @@
   height: 100%;
   transition: transform 1000ms;
   transform-style: preserve-3d;
-  position: relative;
-  will-change: transform;
 }
 
 .front,
 .back {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   position: absolute;
-  backface-visibility: hidden;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  color: var(--text);
+  font-size: var(--description);
 }
 
 .card .back {
@@ -64,22 +60,11 @@
   transform: rotateY(0deg);
 }
 
-.front img {
-  backface-visibility: hidden;
-  width: 80%;
-  height: auto;
-}
-
+.front img,
 .back img {
   backface-visibility: hidden;
-  width: 80%;
+  width: 90%;
   height: auto;
-}
-
-.back {
-  color: var(--text);
-  font-size: var(--description);
-  transform: rotateY(180deg) rotateZ(180deg);
 }
 
 @media (max-width: 1024px) {
@@ -88,20 +73,12 @@
     width: 90%;
     height: 60%;
   }
-
-  .charachters .background {
-    height: 87%;
-  }
-
-  .charachters .layout {
-    height: 98%;
-  }
 }
 
 @media (max-width: 768px) {
   .charachters {
-    transform: translateY(2%);
-    height: 100%;
+    width: 65%;
+    height: 70%;
   }
 
   .charachters .layout {
@@ -109,27 +86,19 @@
     grid-auto-flow: column;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    height: 97.5%;
   }
 
   .card {
     scroll-snap-align: start;
   }
-
-  .front img {
-    width: 50%;
-  }
-
-  .back img {
-    width: 50%;
-  }
 }
 
 @media (max-width: 480px) {
-  .front img {
-    width: 80%;
+  .charachters {
+    width: 65%;
+    height: 65%;
   }
-
+  .front img,
   .back img {
     width: 80%;
   }

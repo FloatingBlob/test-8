@@ -14,7 +14,7 @@
 }
 
 .about-img {
-  width: 50vw;
+  width: 80%;
   max-width: 500px;
   min-width: 300px;
 }
@@ -26,9 +26,8 @@
 
 @media (max-width: 768px) {
   .about {
-    width: 95%;
+    width: 85%;
     height: 90%;
     grid-template-columns: 1fr;
-    transform: translateY(3%);
   }
 }

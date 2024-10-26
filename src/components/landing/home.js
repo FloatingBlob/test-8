@@ -2,7 +2,7 @@ import React from "react";
 import "./home.css";
 
 export default function Landing() {
-    const title = "/assets/title.png";
+    const title = "/assets/title.gif";
 
     return (
         <div className="home">

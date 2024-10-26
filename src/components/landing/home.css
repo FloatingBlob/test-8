@@ -16,8 +16,8 @@
   justify-content: center;
   text-align: center;
   font-size: var(--title);
-  color: var(--text);
   line-height: var(--line-height-title);
+  color: var(--text);
 }
 
 .home-img {
