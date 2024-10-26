@@ -5,32 +5,26 @@
   transform: translateX(-2%);
 }
 
-.faq .background {
-  display: flex;
-  border-radius: var(--border);
-  padding: var(--padding);
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary);
-}
-
 .faq .layout {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
   gap: var(--padding);
   height: 100%;
+  background-color: var(--secondary);
+  outline: var(--padding) solid var(--secondary);
+  border-radius: var(--border);
 }
 
 .note {
   display: flex;
   flex-direction: column;
-  border-radius: var(--border);
   padding: var(--padding);
   justify-content: center;
   text-align: center;
   min-width: 0;
   background-color: var(--background);
+  border-radius: var(--border);
 }
 
 .text {

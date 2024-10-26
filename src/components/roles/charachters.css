@@ -4,27 +4,21 @@
   height: 60%;
 }
 
-.charachters .background {
-  display: flex;
-  border-radius: var(--border);
-  padding: var(--padding);
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary);
-}
-
 .charachters .layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--padding);
   width: 100%;
   height: 100%;
+  background-color: var(--secondary);
+  outline: var(--padding) solid var(--secondary);
+  border-radius: var(--border);
 }
 
 .box {
   perspective: 500px;
-  border-radius: var(--border);
   background-color: var(--primary);
+  border-radius: var(--border);
 }
 
 .card.is-flipped {
@@ -63,7 +57,7 @@
 .front img,
 .back img {
   backface-visibility: hidden;
-  width: 90%;
+  width: 65%;
   height: auto;
 }
 
