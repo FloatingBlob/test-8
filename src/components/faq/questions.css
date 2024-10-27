@@ -1,3 +1,33 @@
+.faq .layout::-webkit-scrollbar {
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+  border: 3px solid var(--secondary);
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar buttons */
+}
+
+/* Firefox scrollbar styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--secondary); /* Thumb and track colors */
+}
+
+/* Edge and IE scrollbar styles */
+* {
+  -ms-overflow-style: scrollbar;
+}
+
 .faq {
   display: grid;
   width: 80%;
