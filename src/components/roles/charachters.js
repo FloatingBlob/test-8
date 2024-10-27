@@ -20,7 +20,7 @@ export default function Roles() {
                         </div>
                         <div className="back">
                             <img src={coder} alt="coder" />
-                            <p>I am the one who codes.</p>
+                            <p>I alone am the coder.</p>
                         </div>
                     </div>
                 </div>
@@ -48,6 +48,9 @@ export default function Roles() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="reference">
+                <a href="https://www.instagram.com/baobuntian/" target="_blank" rel="noopener noreferrer">Bao Tian</a>
             </div>
         </div>
     )

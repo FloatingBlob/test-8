@@ -11,11 +11,13 @@ export const useFlipCard = () => {
 
         cards.forEach(card => {
             card.addEventListener("click", tap);
+            card.addEventListener("touchstart", tap);
         });
 
         return () => {
             cards.forEach(card => {
                 card.removeEventListener("click", tap);
+                card.removeEventListener("touchstart", tap);
             });
         };
     }, []);

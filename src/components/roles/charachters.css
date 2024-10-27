@@ -1,7 +1,9 @@
 .charachters {
   display: grid;
   width: 60%;
-  height: 60%;
+  height: 80%;
+  grid-template-rows: 90% 10%;
+  align-items: center;
 }
 
 .charachters .layout {
@@ -9,7 +11,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: var(--padding);
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-color: var(--secondary);
   outline: var(--padding) solid var(--secondary);
   border-radius: var(--border);
@@ -61,11 +63,30 @@
   height: auto;
 }
 
+.reference{
+  display: flex;
+  justify-content: center;
+}
+
+.reference a{
+  font-family: "Comic Sans", sans-serif;
+  color: var(--primary);
+  font-size: var(--description);
+}
+
+.reference a::before {
+  content: "Art by ";
+  color: var(--text);
+}
+
+.reference a::after {
+  content: "🤠";
+}
+
 @media (max-width: 1024px) {
   .charachters {
     transform: translateY(2%);
-    width: 90%;
-    height: 60%;
+    width: 75%;
   }
 }
 
@@ -90,10 +111,11 @@
 @media (max-width: 480px) {
   .charachters {
     width: 65%;
-    height: 65%;
+    height: 90%;
   }
+
   .front img,
   .back img {
-    width: 80%;
+    width: 75%;
   }
 }

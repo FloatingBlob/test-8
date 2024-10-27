@@ -14,13 +14,14 @@
   background-color: var(--secondary);
   outline: var(--padding) solid var(--secondary);
   border-radius: var(--border);
+  overflow: hidden;
 }
 
 .note {
   display: flex;
-  flex-direction: column;
   padding: var(--padding);
   justify-content: center;
+  align-items: center;
   text-align: center;
   min-width: 0;
   background-color: var(--background);
@@ -41,8 +42,8 @@
 @media (max-width: 1024px) {
   .faq {
     transform: translateY(2%);
-    width: 90%;
-    height: 85%;
+    width: 85%;
+    height: 60%;
   }
 }
 

@@ -43,8 +43,8 @@ export default function FAQ() {
                         <p className="heading">Will there be <span className="highlight">food</span>?</p>
                         <br />
                         <p>Dinner (<span className="highlight">pizza</span>) will be provided, but please bring a <span className="highlight">packed lunch </span>
-                        as leaving school during the hackathon is not allowed. We'll ask about <span className="highlight">dietary requirements </span>
-                        at signup and do our best to accommodate. If you receive free school meals, <span className="highlight">contact us directly</span>.</p>
+                        as leaving school during the hackathon is not allowed. We'll do our best to accommodate <span className="highlight">dietary requirements</span>.
+                        If you receive free school meals, <span className="highlight">contact us directly</span>.</p>
                     </div>
                 </div>
                 <div className="note">

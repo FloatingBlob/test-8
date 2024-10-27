@@ -5,19 +5,19 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "Phantom Sans";
-  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
+
 @font-face {
   font-family: "Phantom Sans";
   src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Comic Sans";
+  src: url("../public/assets/Comic Sans MS.ttf") format("truetype");
+  font-style: normal;
 }
 
 * {
@@ -27,9 +27,9 @@
   font-family: "Phantom Sans", sans-serif;
 
   --title: clamp(2rem, 2vw + 1.5rem, 4.5rem);
-  --content: clamp(1rem, 1.5vw + 0.75rem, 3rem);
+  --content: clamp(1rem, 1.5vw + 0.6rem, 3rem);
   --description: clamp(1rem, 1vw + 0.5rem, 2rem);
-  --box: clamp(0.2rem, 0.5vw + 0.6rem, 1.5rem);
+  --box: clamp(0.75rem, 0.75vw + 0.35rem, 1.5rem);
 
   --border: clamp(15px, 2vw, 50px);
   --padding: clamp(5px, 0.5vw, 10px);
