@@ -63,24 +63,41 @@
   height: auto;
 }
 
-.reference{
+.reference {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.reference a{
+.reference .bao {
   font-family: "Comic Sans", sans-serif;
   color: var(--primary);
   font-size: var(--description);
 }
 
-.reference a::before {
+.reference .bao::before {
   content: "Art by ";
   color: var(--text);
 }
 
-.reference a::after {
+.reference .bao::after {
   content: "🤠";
+}
+
+.reference .dish {
+  font-family: "Raleway Black", sans-serif;
+  color: var(--primary);
+  font-size: var(--description);
+}
+
+.reference .dish::before {
+  content: "Music by ";
+  color: var(--text);
+}
+
+.reference .dish::after {
+  content: "🍴";
 }
 
 @media (max-width: 1024px) {

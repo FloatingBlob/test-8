@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "swiper/css";
 import "./App.css";
 import { useLocalStorage } from "react-use";
@@ -10,14 +10,27 @@ import About from "./components/about/description.js";
 import FAQ from "./components/faq/questions.js";
 import Agenda from "./components/agenda/times.js";
 import Roles from "./components/roles/charachters.js";
+import useSound from "use-sound";
 
 function App() {
     const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const [darkMode, setdarkMode] = useLocalStorage("darkMode", preference);
+    const [darkMode, setDarkMode] = useLocalStorage("darkMode", preference);
 
+    const [isMuted, setIsMuted] = useState(true);
+    const [play, { stop }] = useSound("Hackathon-TDL3.mp3", { volume: isMuted ? 0 : 0.3 });
+
+    function toggleMute() {
+        if (isMuted) {
+            play();
+        } else {
+            stop();
+        }
+        setIsMuted(!isMuted);
+    }
+    
     return (
         <div theme={darkMode ? "dark" : "light"}>
-            <NavBar setDarkMode={setdarkMode} darkMode={darkMode} />
+            <NavBar setDarkMode={setDarkMode} darkMode={darkMode} isMuted={isMuted} toggleMute={toggleMute} />
             
             <Swiper 
                 direction={"vertical"} 

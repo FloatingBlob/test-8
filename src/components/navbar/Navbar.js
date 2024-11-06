@@ -1,9 +1,10 @@
 import React from "react";
 import "./Navbar.css";
-import Toggle from "./Toggle.js";
+import ToggleTheme from "./ToggleTheme.js";
+import ToggleMusic from "./ToggleMusic.js";
 import { CiCircleInfo } from "react-icons/ci";
 
-export default function NavBar ({ setDarkMode, darkMode }) {
+export default function NavBar ({ setDarkMode, darkMode, isMuted, toggleMute }) {
     const icon = "/assets/icon.png";
     return (
         <nav>
@@ -13,11 +14,14 @@ export default function NavBar ({ setDarkMode, darkMode }) {
                         <img src={icon} className="icon" alt="hack club" />
                     </a>
                 </li>
+                <li>
+                    <ToggleMusic isMuted={isMuted} toggleMute={toggleMute} />
+                </li>
                 <li >
                     <a href="#FAQ"> <CiCircleInfo /></a>
                 </li>
                 <li>
-                    <Toggle setDarkMode={setDarkMode} darkMode={darkMode} />
+                    <ToggleTheme setDarkMode={setDarkMode} darkMode={darkMode} />
                 </li>
             </ul>
         </nav>

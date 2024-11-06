@@ -1,2 +1,2 @@
-# test-7
-counterspell?
+# Hactivate
+QE Hackathon Website

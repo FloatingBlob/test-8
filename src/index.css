@@ -20,6 +20,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Raleway Black";
+  src: url("../public/assets/Raleway-Black.ttf") format("truetype");
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;

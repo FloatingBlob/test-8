@@ -19,8 +19,8 @@
     "react-use": "^17.5.0",
     "swiper": "^11.1.9",
     "theme-ui": "^0.17.0",
-    "typewriter-effect": "^2.21.0",
     "use-local-storage": "^3.0.0",
+    "use-sound": "^4.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
