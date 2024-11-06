@@ -17,7 +17,7 @@ function App() {
     const [darkMode, setDarkMode] = useLocalStorage("darkMode", preference);
 
     const [isMuted, setIsMuted] = useState(true);
-    const [play, { stop }] = useSound("Hackathon-TDL3.mp3", { volume: isMuted ? 0 : 0.3 });
+    const [play, { stop }] = useSound("Lost in the Stars.m4a", { volume: isMuted ? 0 : 0.3 });
 
     function toggleMute() {
         if (isMuted) {
