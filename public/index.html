@@ -24,5 +24,33 @@
   <body>
     <div id="root"></div>
     <noscript>no javascript boo womp</noscript>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const Audios = [
+          "/Hackathon-TDL3.mp3",
+        ];
+
+        let loadedAudios = 0;
+
+        function preloadAudios(index) {
+          if (index >= Audios.length) {
+            if (loadedAudios === audios.length) {
+              console.log("All audios have been preloaded.");
+            }
+            return;
+          }
+          const img = new Audio();
+          img.src = Audios[index];
+          img.onload = () => {
+            loadedAudios++;
+            preloadAudios(index + 1);
+          };
+          img.onerror = () => {
+            preloadAudios(index + 1);
+          };
+        }
+        preloadAudios(0);
+      });
+    </script>
   </body>
 </html>
