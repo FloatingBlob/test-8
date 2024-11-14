@@ -26,6 +26,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Noto Serif";
+  src: url("../public/assets/NotoSerifJP-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;

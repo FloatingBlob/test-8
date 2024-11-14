@@ -1,17 +1,17 @@
 import React from "react";
 import "./charachters.css";
-import { useFlipCard } from "../../hooks/flip.js";
+// import { useFlipCard } from "../../hooks/flip.js";
 
 export default function Roles() {
-    const coder = "/assets/coder.png";
-    const artist = "/assets/artist.png";
-    const musician = "/assets/musician.png";
-    const back = "/assets/back.png";
-    useFlipCard();
+    // const coder = "/assets/coder.png";
+    // const artist = "/assets/artist.png";
+    // const musician = "/assets/musician.png";
+    // const back = "/assets/back.png";
+    // useFlipCard();
 
     return(
         <div className="charachters">
-            <div className="layout">
+            {/* <div className="layout">
                 <div className="box">
                     <div className="card">
                         <div className="front">
@@ -48,10 +48,11 @@ export default function Roles() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="reference">
                 <a className="bao" href="https://www.instagram.com/baobuntian/" target="_blank" rel="noopener noreferrer">Bao Tian</a>
                 <a className="dish" href="https://www.youtube.com/channel/UCzRYgazdbTdOB9WOqhTAWbQ" target="_blank" rel="noopener noreferrer">TheDishLasagne</a>
+                <a className="blob" href="https://www.youtube.com/watch?v=41YGL4XLqIo" target="_blank" rel="noopener noreferrer">Laziness </a>
             </div>
         </div>
     )

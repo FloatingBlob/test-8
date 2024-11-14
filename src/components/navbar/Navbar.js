@@ -23,6 +23,11 @@ export default function NavBar ({ setDarkMode, darkMode, isMuted, toggleMute }) 
                 <li>
                     <ToggleTheme setDarkMode={setDarkMode} darkMode={darkMode} />
                 </li>
+                <li>
+                    <a className="signup" href="https://forms.office.com/pages/responsepage.aspx?id=b125yC1jeEmvuRT6r4c4aYGPsWGPwBdEv7WN0CCYqxJUOVFVWktLUlpaOTJOTDZSNlFQNVdQSUtMMC4u&route=shorturl" target="_blank" rel="noopener noreferrer" >
+                        <b>SIGN UP</b>
+                    </a>
+                </li>
             </ul>
         </nav>
     )
